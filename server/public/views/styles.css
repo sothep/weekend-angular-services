@@ -1,0 +1,43 @@
+body {
+  background-color: #700000;
+}
+
+.container {
+  width: 1200px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h4 {
+  font-style: italic;
+  text-align: center;
+}
+
+.note-div {
+  text-align: center;
+}
+
+.note {
+  background-color: #DDDDDD;
+  border: 3px indigo;
+  color: indigo;
+  font-weight: bold;
+  width: 800px;
+  display: inline-block;
+}
+
+.content-box {
+  border-color: indigo;
+  background-color: #EEEEEE;
+}
+
+.repo-name {
+  font-size: 18px;
+}
+
+.timestamp {
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "weekend-github-api-ng-services",
+  "version": "1.0.0",
+  "description": "use angular services to link to Github API & display info on DOM",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "author": "Paul Sotherland",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

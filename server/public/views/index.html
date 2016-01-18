@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="github-app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Services & Github API</title>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="views/styles.css">
+    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/client.min.js"></script>
+  </head>
+  <body ng-controller="mainController">
+    <div class="container">
+      <h2 ng-show="showCount">GitHub Events Summary for User: {{user}}</h2>
+      <div class="note-div">
+        <h4 class="note">Note: Github will allow {{reqsLeft}} more accesses this hour...</h4><br>
+      </div>
+      <div class="well col-md-4 content-box" ng-repeat="n in gitEventsArray track by $index">
+        <h5 class="repo-name">{{n.repoName}}</h5>
+        <p class="description">Type: {{n.desc}}</p>
+        <p class="commit-message" ng-if="n.commitMsg">Commit Message: {{n.commitMsg}}</p>
+        <p class="no-commit-message" ng-if="(!n.commitMsg)">(No commit message listed)</p>
+        <p class="timestamp">Timestamp: {{n.timestamp}}</p>
+      </div>
+    </div>
+  </body>
+</html>
